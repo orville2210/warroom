@@ -1,0 +1,120 @@
+@font-face {
+    font-family: Humnst777-BT-Roman;
+    src: url(../fonts/Humnst777-BT-Roman.ttf);
+}
+
+@font-face {
+    font-family: Rational-Integer-Regular;
+    src: url(../fonts/rational-integer-regular.ttf);
+}
+
+.header{
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+  background: #F3F1F2;
+  font-family: Humnst777-BT-Roman;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.logo{
+  float: left;
+}
+
+.logo-code{
+  font: 300 29.78px Humnst777-BT-Roman;
+  color: #1e3592;
+}
+
+.logo-jedi{
+  font: 900 29.78px Humnst777-BT-Roman;
+  color: #ff503a;
+}
+
+.loginButton{
+  background: transparent;
+  border: 1px solid #4A4763;
+  color: #1e3592;
+}
+
+.registerButton{
+  background: transparent;
+  border: 1px solid #4A4763;
+  color: #1e3592;
+}
+
+.loginButton:hover, .registerButton:hover{
+  background-color: #ff503a;
+  color: #fff;
+}
+
+.slider{
+  height: auto;
+  text-align: center;
+  padding-top: 120px;
+  background-color: #4183d7;
+  padding-bottom: 40px;
+  color: #fafdff;
+}
+
+.slider h1{
+  font-family: Rational-Integer-Regular;
+  font-size: 55px;
+}
+
+.slider-text{
+  font-size: 17px;
+  line-height: 1.8em;
+  font-family: Humnst777-BT-Roman;
+}
+
+.section2{
+  text-align: center;
+  padding-top: 25px;
+}
+
+.ticket-row{
+  width: 90%;
+  margin: auto;
+}
+
+.ticket3{
+  background-color: #F7CA18;
+  text-align: center;
+  border: 1px solid yellow;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.ticket1, .ticket2{
+  background-color: rgb(195,195,195);
+  text-align: center;
+  border: 1px solid grey; 
+  margin-right: 10%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.social-logins{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-share{
+  background-color: #F3F1F2;
+  width: 100vw;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.footer{
+  background-color: #253694;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
