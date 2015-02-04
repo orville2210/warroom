@@ -1,0 +1,36 @@
+{
+  "name": "warroom",
+  "version": "0.1.0",
+  "homepage": "https://github.com/BitBrothers/goahack",
+  "authors": [
+    "sobingt <sobingt@gmail.com>"
+  ],
+  "description": "War Room",
+  "main": "index.html",
+  "keywords": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "angular": "~1.3.8",
+    "angular-messages": "~1.3.8",
+    "angular-route": "~1.3.8",
+    "angular-resource": "~1.3.8",
+    "jquery-ui": "~1.11.2",
+    "angular-animate": "*",
+    "angular-material": "*",
+    "components-font-awesome": "~4.2.0",
+    "angular-aria": "*",
+    "angularjs-socialshare": "*"
+  },
+  "resolutions": {
+    "angular": "~1.3.8"
+  }
+}

@@ -1,0 +1,236 @@
+@font-face {
+    font-family: Humnst777-BT-Roman;
+    src: url(../fonts/Humnst777-BT-Roman.ttf);
+}
+
+@font-face {
+    font-family: Rational-Integer-Regular;
+    src: url(../fonts/rational-integer-regular.ttf);
+}
+
+.header{
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+  background: #F3F1F2;
+  font-family: Humnst777-BT-Roman;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.logo{
+  float: left;
+}
+
+.logo-code{
+  font: 300 29.78px Humnst777-BT-Roman;
+  color: #1e3592;
+}
+
+.logo-jedi{
+  font: 900 29.78px Humnst777-BT-Roman;
+  color: #ff503a;
+}
+
+.loginButton{
+  background: transparent;
+  border: 1px solid #4A4763;
+  color: #2E4198;
+  width: 100px;
+  text-transform: capitalize;
+  font-size: 16px;
+  display: none;
+}
+
+.registerButton{
+  background: transparent;
+  border: 1px solid #4A4763;
+  color: #2E4198;
+   width: 120px;
+  text-transform: capitalize;
+  font-size: 16px;
+  display: none;
+}
+
+.loginButton:hover, .registerButton:hover{
+  background-color: #F54E34 !important;
+  color: #fff !important;
+  border-color: #ff503a !important;
+}
+
+.slider{
+  height: auto;
+  text-align: center;
+  padding-top: 120px;
+  background-color: #4183d7;
+  padding-bottom: 40px;
+  color: #fafdff;
+}
+
+.slider h1{
+  font-family: Rational-Integer-Regular;
+  font-size: 55px;
+}
+
+.slider-text{
+  font-size: 17px;
+  line-height: 1.8em;
+  font-family: Humnst777-BT-Roman;
+}
+
+.section2{
+  text-align: center;
+  padding-top: 25px;
+}
+
+.ticket-row{
+  width: 90%;
+  margin: auto;
+}
+
+/*
+#ticket3{
+  background-color: #F7CA18;
+  text-align: center;
+  border: 1px solid yellow;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+*/
+
+.ticket{
+  background-color: rgb(195,195,195);
+  text-align: center;
+  border: 1px solid grey; 
+  margin-right: 12%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  cursor: pointer;
+}
+
+.ticket:hover{
+  border: 1px solid yellow;
+}
+
+#ticket3{
+  margin-right: 0px;
+}
+
+.selectedTicket{
+  background-color: #F7CA18;
+  text-align: center;
+  border: 1px solid yellow;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.social-logins{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-signin-logo-facebook{
+  padding: 20px;
+  background: #536BDF;
+  font-size: 25px;
+  
+}
+
+.home-signin-logo-linkedin{
+  padding: 20px;
+  background: #308ACF;
+  font-size: 25px;
+}
+
+.home-signin-text-facebook{
+  padding: 0px 15px 0px 15px;
+}
+
+.home-signin-text-linkedin{
+  padding: 0px 15px 0px 15px;
+}
+
+.home-signin-button-facebook{
+ background: #465DD4 !important;
+  color: white !important;
+  text-transform: capitalize;
+  font-size: 20px;
+  padding-left: 0px;
+  height: 60px;
+}
+
+.home-signin-button-linkedin{
+  background: #2A7DBE !important;
+  color: white !important;
+  text-transform: capitalize;
+  font-size: 20px;
+  padding-left: 0px;
+  height: 60px;
+}
+
+.home-login-span{
+  padding: 30px;
+}
+
+.social-share{
+  background-color: #F3F1F2;
+  width: 100vw;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.home-fb-share{
+  background: #465DD4 !important;
+  color: white !important;
+  text-transform: lowercase;
+  font-family: Humnst777-BT-Roman;
+  font-size: 18px;
+  padding: 5px 15px 5px 15px;
+}
+
+.home-twitter-share{
+  background: #45C2FF !important;
+  color: white !important;
+  text-transform: lowercase;
+  font-family: Humnst777-BT-Roman;
+  font-size: 18px;
+  padding: 5px 15px 5px 15px;
+}
+
+.home-gplus-share{
+  background: #C23925 !important;
+  color: white !important;
+  text-transform: lowercase;
+  font-family: Humnst777-BT-Roman;
+  font-size: 18px;
+  padding: 5px 15px 5px 15px;
+}
+
+.footer{
+  background-color: #253694;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer h4{
+  font-family: Humnst777-BT-Roman;
+  font-size: 20px;
+}
+
+.custom-remove-padding{
+  padding: 0px !important;
+}
+
+@media screen and (max-width:998px){
+  .home-login-span{
+    padding: 0px;
+  }
+  .home-signin-button-facebook{
+    margin-bottom: 10px;
+  }
+}
