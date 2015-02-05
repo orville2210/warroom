@@ -1,4 +1,4 @@
-angular.module('WarRoom', ['ngResource', 'ngMessages', 'ngRoute', 'ngAnimate', 'ngMaterial','720kb.socialshare'])
+angular.module('WarRoom', ['ngResource', 'ngMessages', 'ngRoute', 'ngAnimate', 'ngMaterial','720kb.socialshare', 'ngModal'])
   .config(function ($routeProvider) {
 
     $routeProvider

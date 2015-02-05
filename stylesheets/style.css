@@ -1,3 +1,5 @@
+/*Linking Custom Fonts*/
+
 @font-face {
     font-family: Humnst777-BT-Roman;
     src: url(../fonts/Humnst777-BT-Roman.ttf);
@@ -7,6 +9,10 @@
     font-family: Rational-Integer-Regular;
     src: url(../fonts/rational-integer-regular.ttf);
 }
+
+/*Custom Fonts Ends*/
+
+/*Header CSS Begins*/
 
 .header{
   position: fixed;
@@ -58,13 +64,17 @@
   border-color: #ff503a !important;
 }
 
+/*Header CSS Ends*/
+
 .slider{
   height: auto;
   text-align: center;
-  padding-top: 120px;
-  background-color: #4183d7;
+  margin-top: 85px;
   padding-bottom: 40px;
+  padding-top: 20px;
   color: #fafdff;
+  background-image: url(../images/warroom%20bg%20image.png);
+  background-size: cover;
 }
 
 .slider h1{
@@ -86,6 +96,7 @@
 .ticket-row{
   width: 90%;
   margin: auto;
+  margin-bottom: 25px;
 }
 
 /*
@@ -106,6 +117,9 @@
   padding-top: 25px;
   padding-bottom: 25px;
   cursor: pointer;
+  color: #fff;
+  font-family: Humnst777-BT-Roman;
+  font-size: 18px;
 }
 
 .ticket:hover{
@@ -125,8 +139,8 @@
 }
 
 .social-logins{
-  margin-top: 50px;
-  margin-bottom: 50px;
+/*  margin-top: 50px;*/
+  margin-bottom: 25px;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -226,11 +240,128 @@
   padding: 0px !important;
 }
 
-@media screen and (max-width:998px){
+/* Home Page Modals CSS*/
+
+.ng-modal-dialog {
+  /* A centered div above the overlay with a box shadow. */
+  z-index:10000;
+  position: absolute;
+  width: 400px;
+
+  /* Center the dialog */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+
+  background-color: #fff;
+  box-shadow: 4px 4px 80px #000;
+  
+/*  Custom CSS for the modal*/
+  background: #313131;
+  color: #fff;
+  text-align: center;
+  font-family: Humnst777-BT-Roman;
+}
+
+.ng-modal-dialog-content {
+  padding:20px;
+  text-align: left;
+}
+
+.ng-modal-title{
+  font-weight: normal;
+  margin-top: 23px;
+  border-bottom: 0px;
+}
+
+/*
+.problem-statement-modal{
+  background: #EEEEEE;
+  height: auto;
+  text-align: justify;
+  color: #000;
+  padding: 25px;
+}
+*/
+
+.problem-statement-modal textarea{
+  font-family: Humnst777-BT-Roman;
+  width: 100%;
+  max-width: 100%;
+  height: 200px;
+  background-color: #EEEEEE;
+  color: #000;
+  text-align: justify;
+  padding: 10px;
+}
+
+.problem-statement-modal input{
+  font-family: Humnst777-BT-Roman;
+  width: 100%;
+  max-width: 100%;
+  background-color: #EEEEEE;
+  color: #000;
+  text-align: justify;
+  padding: 10px;
+  border: 0px;
+  margin-bottom: 10px;
+}
+
+.modalCancelButton, .modalOKButton{
+  background-color: transparent;
+  color: #fff !important;
+  border: 1px solid #fff;
+  font-family: Humnst777-BT-Roman;
+  font-size: 15px;
+  width: 90px;
+  margin-right: 10px;
+}
+
+.modalCancelButton:hover, .modalOKButton:hover{
+  background-color: #F54E34;
+  color: #fff !important;
+  border: 1px solid #F54E34;
+}
+
+/*Modal CSS Ends*/
+
+/*Animation CSS for home sign up buttons*/
+.animate-show {  
+  opacity: 1;
+  padding: 40px;  background: transparent;
+}
+
+.animate-show.ng-hide-add.ng-hide-add-active,
+.animate-show.ng-hide-remove.ng-hide-remove-active {
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+}
+
+.animate-show.ng-hide {
+  line-height: 0;
+  opacity: 0;
+  padding: 0 10px;
+}
+
+/*Animation CSS ends*/
+
+/*Media queries begin*/
+
+@media screen and (max-width:1200px){
   .home-login-span{
     padding: 0px;
   }
   .home-signin-button-facebook{
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width:991px){
+  .ticket{
+    margin-bottom: 10px;
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
   }
 }

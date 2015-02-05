@@ -14,18 +14,18 @@
     <h3>Three available packages just for you. Choose one and let us do the rest. :)</h3>
     <div class="col-md-10 col-md-offset-1">
       <div class="row ticket-row">
-        <div class="col-md-3 col-sm-3 col-xs-3 ticket {{class1}}" ng-click="changeClassTicket1()" id="ticket1"> 2 DEVELOPERS <br> 1 DESIGNER</div>
-        <div class="{{class2}} col-md-3 col-sm-3 col-xs-3 ticket" ng-click="changeClassTicket2()" id="ticket2"> 3 DEVELOPERS <br> 1 DESIGNER</div>
-        <div class="col-md-3 col-sm-3 col-xs-3 {{class3}} ticket" ng-click="changeClassTicket3()" id="ticket3"> 3 DEVELOPERS <br> 2 DESIGNER</div>
+        <div class="col-md-3 col-sm-3 col-xs-12 ticket {{class1}}" ng-click="changeClassTicket1()" id="ticket1"> 2 DEVELOPERS <br> 1 DESIGNER</div>
+        <div class="{{class2}} col-md-3 col-sm-3 col-xs-12 ticket" ng-click="changeClassTicket2()" id="ticket2"> 3 DEVELOPERS <br> 1 DESIGNER</div>
+        <div class="col-md-3 col-sm-3 col-xs-12 {{class3}} ticket" ng-click="changeClassTicket3()" id="ticket3"> 3 DEVELOPERS <br> 2 DESIGNER</div>
       </div>
       
-      <div class="row social-logins" ng-show="{{showLogins}}">
+      <div class="row social-logins animate-show" ng-show="showLogins">
         <span class="home-login-span">
-          <md-button class="md-raised home-signin-button-facebook"><span class="home-signin-logo-facebook"><i class="fa fa-facebook"></i></span><span class="home-signin-text-facebook"> Sign up with Facebook</span></md-button>
+          <md-button ng-click="toggleProbStatModal()" class="md-raised home-signin-button-facebook"><span class="home-signin-logo-facebook"><i class="fa fa-facebook"></i></span><span class="home-signin-text-facebook"> Sign up with Facebook</span></md-button>
         </span>
         
         <span class="home-login-span">
-          <md-button class="md-raised home-signin-button-linkedin"><span class="home-signin-logo-linkedin"><i class="fa fa-linkedin"></i></span><span class="home-signin-text-linkedin"> Sign up with LinkedIn</span></md-button>
+          <md-button ng-click="toggleTnCModal()"  class="md-raised home-signin-button-linkedin"><span class="home-signin-logo-linkedin"><i class="fa fa-linkedin"></i></span><span class="home-signin-text-linkedin"> Sign up with LinkedIn</span></md-button>
         </span>
       </div>
     </div>
@@ -44,3 +44,32 @@
     </div>
     
   </div>
+
+
+<!--MODALS BEGIN-->
+<modal-dialog class="problemStatementModal" show="probStatModalShown" dialog-title="PROBLEM STATEMENT">
+  <div class="problem-statement-modal">
+    <input type="text" placeholder="Your name...">
+    <input type="tel" placeholder="Your contact number...">
+    <textarea placeholder="Your big idea..."></textarea>
+  </div>
+  <br>
+  <div class="modalButtons">
+    <button class="btn btn-md modalCancelButton" ng-click="toggleProbStatModal()"> Cancel </button>
+    <button class="btn btn-md modalOKButton"> Send </button>
+  </div>
+</modal-dialog>
+
+
+<modal-dialog class="termsAndConditonsModal" show="termsNconditionsModalShown" dialog-title="TERMS & CONDITIONS">
+  <div>
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+  </div>
+  <br>
+  <div class="modalButtons">
+    <button class="btn btn-md modalCancelButton" ng-click="toggleTnCModal()"> Cancel </button>
+    <button class="btn btn-md modalOKButton"> Accept </button>
+  </div>
+</modal-dialog>

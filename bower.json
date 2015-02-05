@@ -28,7 +28,8 @@
     "angular-material": "*",
     "components-font-awesome": "~4.2.0",
     "angular-aria": "*",
-    "angularjs-socialshare": "*"
+    "angularjs-socialshare": "*",
+    "ngModal": "~1.2.2"
   },
   "resolutions": {
     "angular": "~1.3.8"
