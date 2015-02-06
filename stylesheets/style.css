@@ -110,20 +110,22 @@
 */
 
 .ticket{
-  background-color: rgb(195,195,195);
+/*  background-color: rgb(195,195,195);*/
   text-align: center;
-  border: 1px solid grey; 
+  border: 2px solid transparent; 
   margin-right: 12%;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   cursor: pointer;
   color: #fff;
   font-family: Humnst777-BT-Roman;
   font-size: 18px;
+  background: url(../images/ticket.png) no-repeat;
+  background-size: 100% 100%;
 }
 
 .ticket:hover{
-  border: 1px solid yellow;
+  border-color: #DCA638;
 }
 
 #ticket3{
@@ -131,11 +133,13 @@
 }
 
 .selectedTicket{
-  background-color: #F7CA18;
+/*  background-color: #DCA638;*/
   text-align: center;
-  border: 1px solid yellow;
-  padding-top: 25px;
-  padding-bottom: 25px;
+/*  border: 1px solid #DCA638;*/
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: url(../images/ticket-selected.png) no-repeat;
+  background-size: 100% 100%;
 }
 
 .social-logins{
@@ -191,7 +195,6 @@
 
 .social-share{
   background-color: #F3F1F2;
-  width: 100vw;
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
@@ -238,6 +241,10 @@
 
 .custom-remove-padding{
   padding: 0px !important;
+}
+
+.custom-remove-margin{
+  margin: 0px !important;
 }
 
 /* Home Page Modals CSS*/
@@ -365,3 +372,18 @@
 /*    margin-right: auto;*/
   }
 }
+
+@media screen and (max-width:768px){
+  .ticket{
+    width: 186px;
+    margin-left: auto;
+    margin-right: auto !important;
+    float: none;
+  }
+  
+  .animate-show{
+    padding: 0px;
+  }
+}
+
+

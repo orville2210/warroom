@@ -14,14 +14,16 @@
     <h3>Three available packages just for you. Choose one and let us do the rest. :)</h3>
     <div class="col-md-10 col-md-offset-1">
       <div class="row ticket-row">
-        <div class="col-md-3 col-sm-3 col-xs-12 ticket {{class1}}" ng-click="changeClassTicket1()" id="ticket1"> 2 DEVELOPERS <br> 1 DESIGNER</div>
-        <div class="{{class2}} col-md-3 col-sm-3 col-xs-12 ticket" ng-click="changeClassTicket2()" id="ticket2"> 3 DEVELOPERS <br> 1 DESIGNER</div>
-        <div class="col-md-3 col-sm-3 col-xs-12 {{class3}} ticket" ng-click="changeClassTicket3()" id="ticket3"> 3 DEVELOPERS <br> 2 DESIGNER</div>
+        <center>
+          <div class="col-md-3 col-sm-3 col-xs-12 ticket {{class1}}" ng-click="changeClassTicket1()" id="ticket1"> 2 DEVELOPERS <br> 1 DESIGNER</div>
+          <div class="{{class2}} col-md-3 col-sm-3 col-xs-12 ticket" ng-click="changeClassTicket2()" id="ticket2"> 3 DEVELOPERS <br> 1 DESIGNER</div>
+          <div class="col-md-3 col-sm-3 col-xs-12 {{class3}} ticket" ng-click="changeClassTicket3()" id="ticket3"> 3 DEVELOPERS <br> 2 DESIGNER</div>
+        </center>
       </div>
       
       <div class="row social-logins animate-show" ng-show="showLogins">
         <span class="home-login-span">
-          <md-button ng-click="toggleProbStatModal()" class="md-raised home-signin-button-facebook"><span class="home-signin-logo-facebook"><i class="fa fa-facebook"></i></span><span class="home-signin-text-facebook"> Sign up with Facebook</span></md-button>
+          <md-button ng-click="toggleTnCModal()" class="md-raised home-signin-button-facebook"><span class="home-signin-logo-facebook"><i class="fa fa-facebook"></i></span><span class="home-signin-text-facebook"> Sign up with Facebook</span></md-button>
         </span>
         
         <span class="home-login-span">
@@ -30,7 +32,7 @@
       </div>
     </div>
   </div>
-  <div class="row social-share">
+  <div class="row social-share custom-remove-margin">
     <div class="col-md-6 col-md-offset-3">
       <div class="col-md-4 col-sm-4 col-xs-4">
         <md-button class="md-raised home-fb-share" socialshare="" socialshare-provider="facebook" socialshare-url="http://codejedi.io/warroom"> <i class="fa fa-facebook"></i> share </md-button>
@@ -70,6 +72,6 @@
   <br>
   <div class="modalButtons">
     <button class="btn btn-md modalCancelButton" ng-click="toggleTnCModal()"> Cancel </button>
-    <button class="btn btn-md modalOKButton"> Accept </button>
+    <button class="btn btn-md modalOKButton" ng-click="toggleTnCModal(); toggleProbStatModal()"> Accept </button>
   </div>
 </modal-dialog>
